@@ -1,42 +1,47 @@
 public class Wall {
     private double width;
-    private double heigth;
+    private double height;
 
+    public Wall(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
 
     public Wall() {
     }
 
     public double getWidth() {
-
-
         return width;
     }
 
     public void setWidth(double width) {
         this.width = width;
-    }
-
-    public double getHeigth() {
-
-        return heigth;
-    }
-
-    public void setHeigth(double heigth) {
-        this.heigth = heigth;
-    }
-
-    public Wall(double width, double heigth) {
-
-        this.width = width;
-        this.heigth = heigth;
 
     }
 
-    public double area() {
-        if(width<0){
-        return width*heigth;
+
+    public double getHeight() {
+        if (height<0){
+
+        }
+        return 0;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+
+
+
 
     }
-      return 0;
+
+    public double getArea() {
+        if (height>0&&width>0){
+            return width*height;
+        }
+
+
+    return 0;
+
 }
     }
